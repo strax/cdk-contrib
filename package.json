@@ -5,11 +5,12 @@
   "scripts": {
     "prepare": "lerna bootstrap",
     "test": "lerna run test",
-    "test:ci": "lerna exec --no-bail -- \"npm run-script --silent --if-present test:ci | npx --quiet tap-xunit > test-result.xml || true\"",
+    "test:ci": "lerna exec --no-bail -- cdk-ci-test",
     "clean": "lerna run clean",
     "build": "lerna run build"
   },
   "devDependencies": {
+    "@cdk-contrib/testing": "file:packages/testing",
     "lerna": "3.16.4",
     "ava": "2.2.0",
     "typescript": "3.6.0-beta",
