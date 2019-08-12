@@ -5,6 +5,7 @@
   "scripts": {
     "prepare": "lerna bootstrap",
     "test": "lerna run test",
+    "test:ci": "lerna exec --no-bail -- 'npm run-script --silent --if-present test:ci | npx tap-xunit > test-result.xml'",
     "clean": "lerna run clean",
     "build": "lerna run build"
   },
@@ -12,7 +13,6 @@
     "lerna": "3.16.4",
     "ava": "2.2.0",
     "typescript": "3.6.0-beta",
-    "ts-node": "8.3.0",
-    "tap-xunit": "2.4.1"
+    "ts-node": "8.3.0"
   }
 }

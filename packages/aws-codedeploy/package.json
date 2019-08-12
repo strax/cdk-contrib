@@ -25,6 +25,7 @@
   "scripts": {
     "build": "tsc --build",
     "test": "ava",
+    "test:ci": "ava --tap",
     "clean": "tsc --build --clean"
   },
   "ava": {
