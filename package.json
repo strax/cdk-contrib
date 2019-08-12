@@ -1,25 +1,17 @@
 {
-  "name": "cdk-ext",
+  "name": "cdk-contrib",
+  "private": true,
   "version": "0.1.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "test": "nodeunit test/test.*.js"
+    "prepare": "lerna bootstrap",
+    "test": "lerna run test",
+    "clean": "lerna run clean",
+    "build": "lerna run build"
   },
   "devDependencies": {
-    "@types/nodeunit": "^0.0.30",
-    "nodeunit": "^0.11.2",
-    "typescript": "^3.3.3333"
-  },
-  "peerDependencies": {
-    "@aws-cdk/core": "^1.3.0"
-  },
-  "dependencies": {
-    "@aws-cdk/aws-sns": "^1.3.0",
-    "@aws-cdk/aws-sns-subscriptions": "^1.3.0",
-    "@aws-cdk/aws-sqs": "^1.3.0",
-    "@aws-cdk/core": "^1.3.0"
+    "lerna": "3.16.4",
+    "ava": "2.2.0",
+    "typescript": "3.6.0-beta",
+    "ts-node": "8.3.0"
   }
 }
