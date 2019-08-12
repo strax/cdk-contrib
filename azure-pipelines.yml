@@ -27,6 +27,6 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'XUnit'
-    testResultsFiles: 'packages/*/test-result.xml'
+    testResultsFiles: 'packages/*/test-results.xml'
     failTaskOnFailedTests: true
   displayName: 'Collect test results'
