@@ -5,7 +5,7 @@
   "scripts": {
     "prepare": "lerna bootstrap",
     "test": "lerna run test",
-    "test:ci": "lerna exec --no-bail -- 'npm run-script --silent --if-present test:ci | npx --quiet tap-xunit > test-result.xml'",
+    "test:ci": "lerna exec --no-bail -- \"npm run-script --silent --if-present test:ci | npx --quiet tap-xunit > test-result.xml || true\"",
     "clean": "lerna run clean",
     "build": "lerna run build"
   },
