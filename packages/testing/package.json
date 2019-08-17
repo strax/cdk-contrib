@@ -6,10 +6,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "bin": {
-    "cdk-ci-test": "bin/cdk-ci-test.sh",
-    "has-script": "bin/has-script.sh"
-  },
   "files": [
     "dist"
   ],

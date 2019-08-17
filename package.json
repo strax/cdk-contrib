@@ -5,7 +5,6 @@
   "scripts": {
     "prepare": "lerna bootstrap",
     "test": "lerna run test",
-    "test:ci": "lerna exec --no-bail -- cdk-ci-test",
     "clean": "lerna run clean",
     "build": "lerna run build"
   },
